@@ -5,3 +5,23 @@
 	height: 35px;
 	background: white;
 }
+body{
+	background-color: white;
+}
+p{
+	color: blue;
+}
+h1
+{
+	color: gray;
+}
+h2{
+	color: black;
+	font-kerning: auto;
+}
+select{
+	flood-color: aqua;
+}
+textarea#Text{
+	position: center;
+}
