@@ -83,13 +83,13 @@
    <hr><h2><a>Contact Me</a></h2>
   <form action="mailto:tzlilpol@post.bgu.ac.il" method="post" enctype="text/plain">
    Name:<br>
-   <input type="text" name="name"><br>
+   <input type="text" placeholder="Enter your name.." name="name"><br>
    E-mail:<br>
-   <input type="text" name="mail"><br>
+   <input type="text" placeholder="Enter your E-Mail.." name="mail"><br>
    Comment:<br>
-   <textarea id="Text" name="Text" rows="10" cols="50" required=""></textarea><br>
+   <textarea id="Text"  placeholder="Please write something.." name="Text" rows="10" cols="50" required=""></textarea><br>
    <input type="hidden" id="smiley">
-   <label for="smiley">Choose a smiley:</label>
+   Choose a smiley:
    <select name="smiley" oninput="this">
     <option value="&#128523">&#128523</option>
     <option value="&#128521">&#128521</option>
@@ -98,8 +98,8 @@
    </select>
    <br>
    <br>
-   <input type="submit" value="Send">
-   <input type="reset" value="Reset">
+   <input class="submit" type="reset" value="Reset">
+   <input class="submit" type="submit" value="Send">
   </form>
   </p>
  </section>
