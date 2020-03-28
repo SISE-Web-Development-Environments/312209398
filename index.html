@@ -2,13 +2,15 @@
 <html>
 <head>
  <link rel="stylesheet" type="text/css" href="style.css" />
+ <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 </head>
 <body>
  <div id="fb-root"></div>
  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=642596943222561&autoLogAppEvents=1"></script>
-   <div class="ClassMenu" id="menu">
+   <li class="ClassMenu" id="menu">
     <nav>
      <ul>
+      <li class="logo">Tzlil Polak</li>
     <li><a href="#about">About Me</a></li>
     <li><a href="#photos">My Photos</a></li>
     <li><a href="#playlist">My Playlist</a></li>
@@ -18,18 +20,17 @@
     <li><a href="#contact">Contact Me</a></li>
      </ul>
     </nav>
+   </li>
    </div>
-  <hr>
  <br>
  <br>
  <br>
  <br>
  <br>
  <br>
-  <h1>Tzlil Polyak</h1>
  <section>
   <section id="about" class="section">
-   <h2><a>About Me</a></h2>
+  <hr> <h2><a>About Me</a></h2>
    <p>
    <div>
     My name is Tzlil Polyak, I'm 26 years old.I born in Beer-Sheva city.I am third year student in Information System Engeneering department  Ben-Gurion University of the Negev. My hobbies are swimming,GYM,skiing,diving,running,cooking spend time with my friends and Travel around the world.My expectation from this course are very high and I want to learn how to create my own website and how to design it.
@@ -37,34 +38,49 @@
    </p>
   </section>
   <section id="photos" class="section">
-   <h2><a>My Photos</a></h2>
+   <hr> <h2><a>My Photos</a></h2>
    <p>
-    <img src="images/me.jpg" width="300" height="300">
-    <img src="images/friends.jpg" width="300" height="300">
-    <img src="images/vacation.jpg" width="300" height="300">
+    <img class="zoom"  src="images/me.jpg" >
+    <img class="zoom" src="images/friends.jpg" width="300" height="300">
+    <img class="zoom" src="images/vacation.jpg" width="300" height="300">
    </p>
   </section>
   <section id="playlist" class="section">
-  <h2><a>My Playlist</a></h2>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/4eResXt3WPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+   <hr><h2><a>My Playlist</a></h2>
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=RD4eResXt3WPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
  </section>
   <section id="like" class="section">
-  <h2><a name=part4>give me a like</a></h2>
+   <hr><h2><a name=part4>give me a like</a></h2>
   <p>
   <div id="fb-root"></div>
   <div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-tlolpop/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
  </p>
  </section>
   <section id="qrcoder" class="section">
-  <h2><a>QR Code</a></h2>
+   <hr> <h2><a>QR Code</a></h2>
   <p><img src="images/qrcode.png" width="200" height="200"></p>
  </section>
   <section id="spa" class="section">
-  <h2><a>Q&A</a></h2>
-  <p>...</p>
+   <hr><h2><a>Q&A</a></h2>
+  <p>
+   <h1>Q1: Three main differences between web1,web2 and web3:</h1>
+   <ul>The first difference between web 1.0, web 2.0 and web 3.0 is that web 1.0 is consider as read-only web targets on content creativity of producer web 2.0 targets on content creativity of users and producers while web 3.0 targets on linked data sets.</ul>
+   <ul>Another difference is that web 1.0 is allow pushed web, text/graphics-based flash while web 2.0 also support two ways web pages, wikis, videos, pod casts, shading, Personal publishing, 2D portals. Web 3.0 contain all this plus 3D portals, avtar representation, Interoperable profits, Multi-user virtual environment (MUVEs), Integrated games, education and business, all media flows in and out of virtual web worlds.</ul>
+   <ul>One more difference is in search engines. In Web 1.0 search engines retrieve macro contents. Search is very fast but many times results are inaccurate or more than users can chew. Web 2.0 added improved with search engines retrieve tags with micro contents, but the process of tagging is manual. Furthermore, in web 3.0 obtain retrieve micro content texts which were tagged automatically.</ul>
+   </p>
+   <p>
+    <h1>Q2: Use Case : Medicines side effects</h1>
+   <h2>for example, the query:" optalgin side effects"</h2>
+   <label>web 1.0</label>
+   <ul>web user needs to write specific URL of the site that contain information about Optalgin side effects.</ul>
+   <label>web 2.0</label>
+   <ul>web user can search in the search engine- "Optalgin side effects" and get all the links to web pages that holds tags of the words or pairs in the query.</ul>
+   <label>web 3.0</label>
+   <ul>web user can search in the search engine- " Optalgin side effects" and get all the links to web pages or specific part of web pages that within the context of the query.</ul>
+   </p>
  </section>
   <section id="contact" class="section">
-  <h2><a>Contact Me</a></h2>
+   <hr><h2><a>Contact Me</a></h2>
   <form action="mailto:tzlilpol@post.bgu.ac.il" method="post" enctype="text/plain">
    Name:<br>
    <input type="text" name="name"><br>
