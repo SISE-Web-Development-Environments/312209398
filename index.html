@@ -5,8 +5,8 @@
  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 </head>
 <body>
- <div id="fb-root"></div>
- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=642596943222561&autoLogAppEvents=1"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=642596943222561&autoLogAppEvents=1"></script>
    <li class="ClassMenu" id="menu">
     <nav>
      <ul>
@@ -52,9 +52,8 @@
   <section id="like" class="section">
    <hr><h2><a name=part4>give me a like</a></h2>
   <p>
-  <div id="fb-root"></div>
-  <div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-tlolpop/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
- </p>
+   <div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-tlolpop/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+   </p>
  </section>
   <section id="qrcoder" class="section">
    <hr> <h2><a>QR Code</a></h2>
@@ -69,7 +68,7 @@
    <ul>One more difference is in search engines. In Web 1.0 search engines retrieve macro contents. Search is very fast but many times results are inaccurate or more than users can chew. Web 2.0 added improved with search engines retrieve tags with micro contents, but the process of tagging is manual. Furthermore, in web 3.0 obtain retrieve micro content texts which were tagged automatically.</ul>
    </p>
    <p>
-    <h1>Q2: Use Case : Medicines side effects</h1>
+    <h2>Q2: Use Case : Medicines side effects</h2>
    <h2>for example, the query:" optalgin side effects"</h2>
    <label>web 1.0</label>
    <ul>web user needs to write specific URL of the site that contain information about Optalgin side effects.</ul>
@@ -81,25 +80,27 @@
  </section>
   <section id="contact" class="section">
    <hr><h2><a>Contact Me</a></h2>
-  <form action="mailto:tzlilpol@post.bgu.ac.il" method="post" enctype="text/plain">
+  <form name="mailto" action="mailto:tzlilpol@post.bgu.ac.il" method="get"  enctype="text/plain">
    Name:<br>
    <input type="text" placeholder="Enter your name.." name="name"><br>
    E-mail:<br>
    <input type="text" placeholder="Enter your E-Mail.." name="mail"><br>
+   Subject:<br>
+   <input type="subject" name="subject" id="subject"><br>
    Comment:<br>
-   <textarea id="Text"  placeholder="Please write something.." name="Text" rows="10" cols="50" required=""></textarea><br>
-   <input type="hidden" id="smiley">
+   <textarea id="Comment"  placeholder="Please write something.." name="body" rows="10" cols="50" required=""></textarea><br>
    Choose a smiley:
-   <select name="smiley" oninput="this">
-    <option value="&#128523">&#128523</option>
-    <option value="&#128521">&#128521</option>
-    <option value="&#128522">&#128522</option>
-    <option value="&#128519">&#128519</option>
-   </select>
+   <input style="border: transparent; background-color: transparent"type="button" onclick="add('&#128523')" name="imog" value="&#128523">
+   <input style="border: transparent; background-color: transparent"type="button" onclick="add('&#128521')" name="imog" value="&#128521">
+   <input style="border: transparent; background-color: transparent"type="button" onclick="add('&#128522')" name="imog" value="&#128522">
+   <input style="border: transparent; background-color: transparent"type="button" onclick="add('&#128519')" name="imog" value="&#128519">
+   <input style="border: transparent; background-color: transparent"type="button" onclick="add('&#128518')" name="imog" value="&#128518">
+   <input style="border: transparent; background-color: transparent"type="button" onclick="add('&#128517')" name="imog" value="&#128517">
+   <input style="border: transparent; background-color: transparent"type="button" onclick="add('&#128516')" name="imog" value="&#128516">
    <br>
    <br>
-   <input class="submit" type="reset" value="Reset">
-   <input class="submit" type="submit" value="Send">
+   <button type="submit" class="button">Send</button>
+   <button type="reset" class="button">Reset</button>
   </form>
   </p>
  </section>
@@ -118,5 +119,11 @@
      $('#menu').toggle($(this).scrollTop()>1000)
   });
   </script>
+ <script type="text/javascript">
+  function add(str){
+   document.mailto.body.value +=str;
+  }
+ </script>
+ <script type="text/javascript"></script>
 </body>
 </html>
